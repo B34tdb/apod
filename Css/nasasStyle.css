@@ -1,15 +1,51 @@
 body{
-    background-image: url(../Fotos/OH1Cf1c.jpg);
-    background-repeat:no-repeat;
+    background-color: rgb(238, 198, 194);
 }
 
 header{
-    background-color: rgba(80, 64, 87, 0.678);
     padding:15px;
     height: 50px;
     text-align: center;
+    align-items:center;
+
 }
 
 #texto1{
     color:white;
+}
+
+#paragrafo{
+    text-align: center;
+    font-weight: 900; 
+    font-size: 19px;
+    padding:45px;
+}
+
+.fotob{
+    display:flex;
+    justify-content: center;
+    padding:55px;
+}
+
+#date{
+    display:flex;
+    justify-content:center;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    height:50px;
+    width: 150px;
+    border-radius: 15px 0 15px 0;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    padding:45px;
+    font-size:20px;
 }
