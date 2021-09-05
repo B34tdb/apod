@@ -27,7 +27,7 @@ header{
     padding:55px;
 }
 
-#date{
+.data{
     display:flex;
     justify-content:center;
 }
