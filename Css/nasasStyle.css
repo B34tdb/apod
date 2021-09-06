@@ -27,6 +27,15 @@ header{
     padding:55px;
 }
 
+#titulo{
+    text-align: center;
+}
+
+#texto{
+    text-align:center;
+    padding: 20px;
+}
+
 .data{
     display:flex;
     justify-content:center;

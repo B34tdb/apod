@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/nasasStyle.css">
     <link rel="stylesheet" href="../Css/reset.css">
-    <script src="./Js/nasa.js" url="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
 
 
     <title>Apoid</title>
@@ -26,21 +28,33 @@
         </p>
     </div>
 
+    <div>
+        <h1 id="titulo"></h1>
+    </div>
+
    <div class="fotob">
-    <img  id="src" src="./Fotos/istockphoto-1035676256-170667a.jpg" alt="">
-   </div>
     
+    <img  id="src"  src="./Fotos/istockphoto-1035676256-170667a.jpg" alt=""> 
+    
+    </div>
+    
+    <div>
+        <p id="texto"></p>
+    </div>
+
     <div class="data">
         <input id="data" type="date" >
     </div>
 
     <div class="botao">
-        <button  id="btt" type="submit" onclick="exp()">Explorar 🚀</button>
+        <button  id="btt" type="submit">Explorar 🚀</button>
     </div>
     
     <footer>
         <p id="footer">&copy Todos os direitos reservado</p>
     </footer>
+
+    <script src="./Js/nasa.js"> </script> 
 </body>
 
 </html>

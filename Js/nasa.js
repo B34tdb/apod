@@ -1,16 +1,27 @@
-const ola = new XMLHttpRequest()
- const data = document.getElementById('date'),
- const button = document.querySelector('btt'),
- const foto =document.getElementById ('src')
+ let data = document.getElementById('data');
+ let button = document.getElementById('btt');
+ let foto =document.getElementById ('src');
+ let titulo= document.getElementById('titulo');
+ let texto= document.getElementById("texto")
 
 
-$('exp').click(function() {
-    let Api = `https://api.nasa.gov/planetary/apod?tL7ZrourDVQMzSsnwVdqEKTgadpJpHJG5artBOWw=${result}`
-    let result = document.getElementById ("date").value 
+button.addEventListener("click",function(){
+  
+    let result = data.value
+    let Api = `https://api.nasa.gov/planetary/apod?api_key=mczn2zBZvgJ5El2at31vU3KbJsZqeEP7QBNqFHzv${result}`
+
     $.ajax({
         url: Api,
         method: 'GET',
-        sucess:
+        success: function(result){
+             newResult = result
+            foto.scr = newResult.url
+            titulo.innerText = newResult.title
+            texto.innerHTML = newResult.explanation
+           
+        }
     })
+})  
 
-})
+
+
